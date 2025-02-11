@@ -168,10 +168,9 @@ You can use this function to read a Fastq file like this:
 
 ```python
 records = read_fastq("reads.fq")
-for header, sequence, quality_header, quality in records:
+for header, sequence, quality in records:
     print(header)
     print(sequence)
-    print(quality_header)
     print(quality)
 ```
 This will print the headers, sequences, quality score headers, and quality scores in the Fastq file. You can modify the read_fastq function to process the data in any way you need.
